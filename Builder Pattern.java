@@ -57,14 +57,12 @@ public class Meal {
     }
 
     public static void main(String[] args) {
-        Builder b = new Builder().salad("This salad is too good.")
+        Builder b = builder().salad("This salad is too good.")
                 .desert("I love to eat desert.")
                 .drink("I am drinking water.")
                 .appetizer("I don't know that is appetizer.")
                 .mainDish("Rice is our main dish.");
         
-        b.build();
-
         System.out.println(b.drink);
         System.out.println(b.desert);
         System.out.println(b.salad);
