@@ -62,12 +62,14 @@ public class Meal {
                 .drink("I am drinking water.")
                 .appetizer("I don't know that is appetizer.")
                 .mainDish("Rice is our main dish.");
+        
+        b.build();
 
-        System.out.println(b.build().drink);
-        System.out.println(b.build().desert);
-        System.out.println(b.build().salad);
-        System.out.println(b.build().appetizer);
-        System.out.println(b.build().mainDish);
+        System.out.println(b.drink);
+        System.out.println(b.desert);
+        System.out.println(b.salad);
+        System.out.println(b.appetizer);
+        System.out.println(b.mainDish);
     }
 }
 
