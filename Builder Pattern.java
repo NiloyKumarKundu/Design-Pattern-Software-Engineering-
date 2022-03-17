@@ -13,11 +13,9 @@ public class Meal {
         this.salad = builder.salad;
     }
 
-
     public static Builder builder() {
         return new Builder();
     }
-
 
     public static class Builder {
         private String appetizer;
@@ -57,12 +55,12 @@ public class Meal {
     }
 
     public static void main(String[] args) {
-        Builder b = builder().salad("This salad is too good.")
+        Meal b = builder().salad("This salad is too good.")
                 .desert("I love to eat desert.")
                 .drink("I am drinking water.")
                 .appetizer("I don't know that is appetizer.")
-                .mainDish("Rice is our main dish.");
-        
+                .mainDish("Rice is our main dish.").build();
+
         System.out.println(b.drink);
         System.out.println(b.desert);
         System.out.println(b.salad);
